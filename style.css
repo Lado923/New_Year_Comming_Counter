@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Balqis';
+    src: url('assets/fonts/BalqisCyrillic-Script.woff2') format('woff2');
+    src: url('assets/fonts/BalqisCyrillic-Script.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url('assets/fonts/RobotoCondensed-Regular.woff2') format('woff2');
+    src: url('assets/fonts/RobotoCondensed-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(assets/bg-image.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: fit-content;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.7);
+    padding: 4vh;
+    border: 2vmin solid rgba(224, 155, 172,0.1);
+    border-radius: 25px;
+
+}
+
+.counter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.counter div{
+    width: 20%;
+}
+
+h1 {
+    font-family: 'Balqis'; 
+    font-size: 8vw;
+    margin: 0;
+    font-weight: 300;
+    color: #E09BAC;
+}
+
+p {
+    font-family: 'RobotoCondensed-Regular';
+    font-size: 7vw;
+    margin:0;
+    font-weight: 200;
+    margin-top: 2vmin;
+    color: #626E5F;
+}
+span {
+    font-family: 'RobotoCondensed-Regular';
+    font-size: 4vw;
+    color: #8D9896;
+}
+
