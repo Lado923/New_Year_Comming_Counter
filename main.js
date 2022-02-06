@@ -15,13 +15,16 @@ function countdownNewYear () {
     const minutes = Math.floor(differense / 60 % 60);
     const seconds = Math.floor(differense % 60);
 
-    daysEl.innerHTML = days;
-    hoursEl.innerHTML = hours;
-    minutesEl.innerHTML = minutes;
-    secondsEl.innerHTML = seconds;
+    daysEl.innerHTML = correctionTime(days);
+    hoursEl.innerHTML = correctionTime(hours);
+    minutesEl.innerHTML = correctionTime(minutes);
+    secondsEl.innerHTML = correctionTime(seconds);
 }
 
 countdownNewYear();
 setInterval(countdownNewYear, 1000);
 
 
+function correctionTime(time) {
+    return time < 10 ? `0${time}` : time
+}
