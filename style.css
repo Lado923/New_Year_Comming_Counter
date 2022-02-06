@@ -28,10 +28,15 @@ body {
     background-image: url(assets/bg-image.png);
     background-repeat: no-repeat;
     background-size:cover;
+    height: 100vh;
+}
+
+.body__container{
+    width: 100%;
+    height: 97vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .container {
@@ -75,9 +80,31 @@ p {
     margin-top: 2vmin;
     color: #626E5F;
 }
-span {
+.countdown span {
     font-family: 'RobotoCondensed-Regular';
     font-size: 4vw;
     color: #8D9896;
+}
+
+.footer {
+    height: 1vh;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.footer a{
+    font-size: 2vmin;
+    font-family: 'RobotoCondensed-Regular';
+    color: #8D9896;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #626E5F;
+}
+
+.footer span:hover{
+    text-decoration: underline;
+    color: #626E5F;
 }
 
